@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" shutdownHook="disable">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+           <!--<Filters>
+                <RegexFilter regex=".*Shuffle.*|.*4\d\d.*" onMatch="DENY" onMismatch="ACCEPT"/>
+            </Filters> -->
+            <PatternLayout pattern="%highlight{%level{length=1}[%d{HH:mm:ss,SSS}] [%t]%logger{0}:} %msg%n"/>
+        </Console>
+        <File name="MyFile" fileName="logs/${sys:logFilename}.log" append="false" immediateFlush="true">
+            <PatternLayout pattern="%level{length=1}[%d{HH:mm:ss,SSS}] [%t]%logger{0}: %msg%n"/>
+        </File>
+    </Appenders>
+
+    <Loggers>
+        <!--
+        <Logger level="debug" name="protocols.overlays.hyparview"/>
+        <Logger level="debug" name="protocols.overlays.xbot.Xbot"/>
+        <Logger level="debug" name="protocols.overlays.biasLayerTree"/>
+        <Logger level="info" name="protocols.overlays.cyclon"/>
+        <Logger level="debug" name="protocols.overlays.tman"/>
+        <Logger level="debug" name="protocols.overlays.tmanWithCyclon"/>
+        <Logger level="debug" name="protocols.tester.CyclonTester"/>
+        <Logger level="debug" name="protocols.tester.TmanTester"/>
+        -->
+
+        <Logger level="info" name="protocols.tester"/>
+        <Logger level="info" name="protocols.overlays"/>
+        <Logger level="debug" name="channels"/>
+        <Logger level="debug" name="protocols.dissemination"/>
+        <Root level="info">
+            <AppenderRef ref="Console" level="all"/>
+
+        </Root>
+    </Loggers>
+
+</Configuration>

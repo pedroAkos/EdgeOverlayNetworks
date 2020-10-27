@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="INFO" shutdownHook="disable">
+    <Appenders>
+        <Console name="Console" target="SYSTEM_OUT">
+           <!--<Filters>
+                <RegexFilter regex=".*Shuffle.*|.*4\d\d.*" onMatch="DENY" onMismatch="ACCEPT"/>
+            </Filters> -->
+            <PatternLayout pattern="%highlight{%level{length=1}[%d{HH:mm:ss,SSS}] [%t]%logger{0}:}{STYLE=Logback} %msg%n"/>
+        </Console>
+
+    </Appenders>
+
+    <Loggers>
+        <Logger level="info" name="protocols.overlays.hyparview"/>
+        <Logger level="debug" name="protocols.overlays.xbot"/>
+        <Logger level="info" name="protocols.dissemination.plumtree"/>
+        <Logger level="info" name="babel"/>
+        <Logger level="info" name="network"/>
+        <Logger level="info" name="io.netty"/>
+        <Root level="debug">
+            <AppenderRef ref="Console" level="all"/>
+        </Root>
+    </Loggers>
+
+</Configuration>
