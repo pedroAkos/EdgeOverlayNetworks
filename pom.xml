@@ -41,6 +41,9 @@
                     <descriptorRefs>
                         <descriptorRef>jar-with-dependencies</descriptorRef>
                     </descriptorRefs>
+                    <descriptors>
+                      <descriptor>${project.basedir}/src/assembly/dep.xml</descriptor>
+                    </descriptors>
                 </configuration>
                 <executions>
                     <execution>
