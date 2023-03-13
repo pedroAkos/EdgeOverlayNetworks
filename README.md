@@ -128,3 +128,7 @@ Where:
 - ``$level`` is the level assigned to the java application.
 - ``$contact`` is the ip address of the contact node.
 - ``$otherArgs`` is a list of additional arguments in the form ``"-babelConf <option1>=<value1> -babelConf <option2>=<value2> ..."``
+
+### Thanks
+This project was partially funded by project [NG-Storage](https://asc.di.fct.unl.pt/~jleitao/ngstorage.php) (PTDC/CCI-INF/32038/2017).
+
