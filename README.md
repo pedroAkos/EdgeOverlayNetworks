@@ -130,5 +130,5 @@ Where:
 - ``$otherArgs`` is a list of additional arguments in the form ``"-babelConf <option1>=<value1> -babelConf <option2>=<value2> ..."``
 
 ### Thanks
-This project was partially funded by project [NG-Storage](https://asc.di.fct.unl.pt/~jleitao/ngstorage.php) (PTDC/CCI-INF/32038/2017).
+This work was partially funded by project [NG-Storage](https://asc.di.fct.unl.pt/~jleitao/ngstorage.php) (PTDC/CCI-INF/32038/2017).
 
