@@ -1,5 +1,9 @@
 # Edge Overlays - Overlay Protocols for Edge Computing Management
 
+This work was published in the IEEE 19th International Symposium on Network Computing and Applications (NCA'20).
+The paper can be found [here](https://ieeexplore.ieee.org/document/9306716).
+
+----- 
 Here you will find the java implementations of popular overalay networks for p2p, and a syntethic edge computing configuration using docker containers.
 
 Available overlay protocols:
